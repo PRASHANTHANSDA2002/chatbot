@@ -17,7 +17,7 @@ function App() {
     e.preventDefault();
     setLoading(true);
     axios
-      .post("http://localhost:5555/chat", { prompt })
+      .post("https://chatbot-o8ew.onrender.com/chat", { prompt })
       .then((res) => {
         setResponse(res.data);
         setLoading(false);
